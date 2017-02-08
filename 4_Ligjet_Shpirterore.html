@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Ligjet Shpirt&euml;rore</title>
+    <link rel="icon" type="image/png" href="Images/Numri4.png">
+    <style type="text/css">
+        html{
+            background-image: url("Images/background.jpg");
+            }
+        #permbajtja{
+            width: 80%;
+            height: 550px;
+            padding-left: 10%;
+            padding-top: 3%;
+            }
+        #permbajtja1{
+            background-color:Gray;
+            background-image: url("Images/background1.jpg");
+            background-size: 100%;
+		height: 100%;
+               }
+        #preview{
+            width: 10%;
+            position: relative;
+            float: left;
+            }
+        #next{
+            width: 10%;
+            position: relative;
+            float: right;
+            clear: right;
+            }
+        .imazhet{
+            text-align: center;
+            }
+        p{
+            font-size: 105%;
+            }
+        #teksti{
+            padding: 5%;;
+            }
+        #teksti>h1,h2,h3{
+            color: Darkred;
+            }
+        .kontaktoni{
+            float: right;
+            position: relative;
+            padding-right: 5%;
+            }
+        .kontaktoni:hover{
+            text-decoration: underline;
+            }
+        #forma{
+            width: 30%;
+            position: fixed;
+            visibility: hidden;
+            padding-left: 10%;
+            }
+        #cilesi{
+            background-color: White;
+            color: #000080; 
+            border: medium groove #000080; 
+            position: fixed; 
+            width: 300px; 
+            height: 120px; 
+            display: block; 
+            overflow: auto; 
+            top: 40%; 
+            z-index: auto; 
+            left: 35%;
+            }
+        #i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21{
+            visibility: hidden;
+            font-size: 0px;
+            width: 0%;
+            height: 0%;
+            }
+        #adresa{
+            text-align: center;
+            clear: both;
+            }
+        #neFund{
+			position: relative;
+            clear:both;
+            float: left;
+            padding-left: 10%;
+            text-align: center;
+            }
+        #pyetja2
+        {
+            visibility:hidden;
+            }
+        #P1, #P2, #P3, #P4, #P5, #P6, #P7, #P8, #P9, #P10, #P11, #P12, #P13, #P14, #P15{
+            float: left;
+            position: relative;
+            text-align: center;
+            }
+    </style>
+    <script language="javascript" type="text/javascript" src="Script.js">
+    </script>
+</head>
+<body>
+    <div id="permbajtja">
+        <div id="permbajtja1">
+            <img id="preview" src="Images/preview.png" onclick="previewView()" onmouseover="ndryshoHover(1)" onmouseout="ndryshoOut(1)"/>
+            <img id="next" src="Images/next.png" onclick="nextView()" onmouseover="ndryshoHover(2)" onmouseout="ndryshoOut(2)"/>
+            <div id="teksti">
+                <h1>A keni d&euml;gjuar p&euml;r <br />
+                    <img src="Images/Numri4.png" width="15%" /> Ligjet Shpirt&euml;rore ?</h1>
+		        <h3>Ashtu si&ccedil; ekzistojn&euml; ligje fizike q&euml; rregullojn&euml; funksionimin fizik t&euml; gjith&euml;sis&euml;, ashtu ekzistojn&euml; edhe ligje shpirt&euml;rore q&euml; rregullojn&euml; marr&euml;dh&euml;nien t&euml;nde me Per&euml;ndin&euml;.</h3>
+	        </div>
+            <div id="forma">
+                <form id="cilesi" name="myemailform" action="mailto:adresa@adresa.com" method="post" enctype="text/plain">
+                    <table>
+                        <tr>
+                            <td><label for="Emri">Emri: </label></td>
+                            <td><input type="text" name="Emri" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Mbiemri">Mbiemri: </label></td>
+                            <td><input type="text" name="Mbiemri" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email: </label></td>
+                            <td><input type="email" name="Email" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="D&euml;rgo" /></td>
+                            <td><input type="reset" value="Boshatis" /></td>
+                            <td><input type="button" value="Mbyll" onclick="kontakt()"/></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <input id="i1" type="text" value="
+        <h1>A keni d&euml;gjuar p&euml;r <br />
+                    <img src=&quot;Images/Numri4.png&quot; width=&quot;15%&quot; /> Ligjet Shpirt&euml;rore ?</h1>
+		    <h3>Ashtu si&ccedil; ekzistojn&euml; ligje fizike q&euml; rregullojn&euml; funksionimin fizik t&euml; gjith&euml;sis&euml;, ashtu ekzistojn&euml; edhe ligje shpirt&euml;rore q&euml; rregullojn&euml; marr&euml;dh&euml;nien t&euml;nde me Per&euml;ndin&euml;.</h3>
+		"/>
+	<input id="i2" type="text" value="
+            <h2><img src=&quot;Images/Numri1.png&quot; width=&quot;10%&quot; /> Per&euml;ndia t&euml; do dhe t&euml; ofron nj&euml; plan t&euml; mrekulluesh&euml;m p&euml;r jet&euml;n t&euml;nde.</h2>
+            <p>(Vargjet n&euml; k&euml;t&euml; librushk&euml; duhen lexuar n&euml; kontekst me Bibl&euml;n.)</p>
+            <h3>Dashuria e Per&euml;ndis&euml;</h3>
+            <p>&quot;Po, Per&euml;ndia aq shum&euml; e deshi bot&euml;n, saq&euml; e dha Birin e tij t&euml; vet&euml;m, q&euml; t&euml; mos humbas&euml; kushdo q&euml; beson n&euml; t&euml;, por t&euml; ket&euml; jet&euml;n e p&euml;rjetshme&quot; (Gjoni 3:16).</p>
+            <h3>Plani i Per&euml;ndis&euml;</h3>
+            <p>(Jezui tha:) &quot;Por un&euml; kam ardhur q&euml; t&euml; ken&euml; jet&euml; e ta ken&euml; me boll&euml;k&quot; (q&euml; ajo t&euml; jet&euml; e begat&euml; dhe kuptimplot&euml;) (Gjoni 10:10).</p>
+            <p>Pse shumica e njer&euml;zve nuk po e jetojn&euml; k&euml;t&euml; jet&euml; me boll&euml;k? Sepse...</p>
+		"/>
+    <input id="i3" type="text" value="
+        <h2><img src=&quot;Images/Numri2.png&quot; width=&quot;10%&quot; /> Njeriu &euml;sht&euml; m&euml;katar dhe i ndar&euml; nga per&euml;ndia. prandaj ai nuk mund t&euml; njoh&euml; dhe t&euml; p&euml;rjetoj&euml; dashurin&euml; dhe planin q&euml; per&euml;ndia ka p&euml;r t&euml;.</h2>
+		<h3>Njeriu &euml;sht&euml; m&euml;katar</h3>
+		<p>&quot;T&euml; gjith&euml; u b&euml;n&euml; fajtor&euml; dhe humb&euml;n madh&euml;shtin&euml; q&euml; u dha Per&euml;ndia&quot; (Romak&euml;ve 3:23).</p>
+		<p>Njeriu u krijua q&euml; t&euml; ket&euml; shoq&euml;ri me Per&euml;ndin&euml;, por p&euml;r shkak t&euml; egoizmit t&euml; tij ai zgjodhi t&euml; ndiqte rrug&euml;n e vet t&euml; pavarur dhe shoq&euml;ria me Per&euml;ndin&euml; u nd&euml;rpre. K&euml;t&euml; m&euml;nyr&euml; t&euml; jet&euml;s pa Per&euml;ndin&euml; q&euml; tregon indiferenc&euml; dhe rebelim kund&euml;r Tij, Bibla e quan m&euml;kat.</p>
+		<h3>Njeriu &euml;sht&euml; i ndar&euml; nga Per&euml;ndia</h3>
+		<p>&quot;Sepse paga e m&euml;katit &euml;sht&euml; vdekja&quot; (ndarje shpirt&euml;rore nga Per&euml;ndia) (Romak&euml;ve 6:23).</p>
+    " />
+    <input id="i4" type="text" value="
+        <p class=&quot;imazhet&quot; ><img src=&quot;Images/njeriuMekatar.jpg&quot; width=&quot;200px&quot;/></p>
+		<p>Ky diagram tregon se Per&euml;ndia &euml;sht&euml; i shenjt&euml; nd&euml;rsa njeriu m&euml;katar. Nj&euml; humner&euml; shum&euml; e gjer&euml; dhe e thell&euml; i ndan ata t&euml; dy. Shigjetat ilustrojn&euml; njeriun q&euml; vazhdimisht mundohet t&euml; arrij&euml; Per&euml;ndin&euml; dhe jet&euml;n me boll&euml;k me p&euml;rpjekjet e veta, p&euml;rmes veprave t&euml; mira fes&euml; a filozofis&euml;. </p>
+		<p>Ligji i tret&euml; shpjegon ur&euml;n e vetme q&euml; bashkon njeriun me Per&euml;ndin&euml;...</p>
+    " />
+    <input id="i5" type="text" value="
+        <h2><img src=&quot;Images/Numri3.png&quot; width=&quot;10%&quot; /> Jezu krishti &euml;sht&euml; e vetmja zgjidhje e per&euml;ndis&euml; p&euml;r m&euml;katet e njeriut. P&euml;rmes tij mund t&euml; njoh&euml;sh dhe t&euml; p&euml;rjetosh dashurin&euml; q&euml; ka per&euml;ndia p&euml;r ty dhe planin q&euml; ai ka p&euml;r jet&euml;n t&euml;nde.</h2>
+		<h3>Ai vdiq q&euml; t&euml; mos vdisnim ne</h3>
+		<p>&quot;Por Per&euml;ndia e tregon dashurin&euml; e tij ndaj nesh n&euml; at&euml; q&euml;, kur ende ishim m&euml;katar&euml;, Krishti vdiq p&euml;r ne&quot; (Romak&euml;ve 5:8).</p>
+		<h3>Ai u ngjall nga t&euml; vdekurit</h3>
+		<p>&quot;Mesia [dmth. Krishti] vdiq p&euml;r m&euml;katet tona, n&euml; p&euml;rputhje me profecit&euml; e Shkrimit t&euml; shenjt&euml;, dhe u varros. Dit&euml;n e tret&euml;, ai u ringjall nga t&euml; vdekurit, si&ccedil; parathuhej n&euml; Shkrimin e shenjt&euml;, dhe iu shfaq Pjetrit dhe pastaj t&euml;r&euml; rrethit t&euml; apostujve. M&euml; von&euml; e pan&euml; m&euml; shum&euml; se pes&euml;qind dishepuj; disa kan&euml; vdekur. por shumica jan&euml; ende gjall&euml;&quot; (1 Korintasve 15:3 6).</p>
+    " />
+    <input id="i6" type="text" value="
+        <h3>Ai &euml;sht&euml; rruga e vetme p&euml;r te Per&euml;ndia</h3>
+        <p>&quot;Jezui u tha: &#39;Un&euml; jam rruga, e v&euml;rteta dhe jeta; askush nuk vjen tek Ati ve&ccedil;se n&euml;p&euml;rmjet meje&#39;&quot; (Gjoni 14:6)</p>
+		<p class=&quot;imazhet&quot; ><img src=&quot;Images/njeriPerendi.jpg&quot; width=&quot;200px&quot;></p>
+		<p>Ky diagram ilustron ur&euml;n e vetme q&euml; nd&euml;rtoi Per&euml;ndia mes Atij dhe njeriut duke d&euml;rguar Birin e Tij t&euml; vet&euml;m, Jezu Krishtin, q&euml; t&euml; vdes&euml; n&euml; kryq p&euml;r ne p&euml;r t&euml; paguar d&euml;nimin p&euml;r m&euml;katet tona.</p>
+		<p>Nuk mjafton vet&euml;m t'i dish k&euml;to tri ligje shpirt&euml;rore...</p>
+    " />
+    <input id="i7" type="text" value="
+        <h2><img src=&quot;Images/Numri4.png&quot; width=&quot;10%&quot; /> Ne duhet personalisht ta pranojm&euml; Jezu Krishtin si Shp&euml;timtar dhe Zot e at&euml;her&euml; mund t&euml; njohim dhe t&euml; p&euml;rjetojm&euml; dashurin&euml; q&euml; Per&euml;ndia ka p&euml;r ne dhe planin q&euml; ai ka p&euml;r jet&euml;n ton&euml;.</h2>
+		<h3>Duhet ta pranojm&euml; Jezu Krishtin</h3>
+		<p>&quot;Megjithat&euml;, disa e pranuan dhe besuan n&euml; t&euml;. Ai u dha atyre t&euml; drejt&euml;n t&euml; b&euml;heshin f&euml;mij&euml; t&euml; Per&euml;ndis&euml;&quot; (Gjoni 1:12).</p>
+		<h3>Jezuin e pranojm&euml; p&euml;rmes besimit</h3>
+		<p>&quot;N&euml; t&euml; v&euml;rtet&euml;, vet&euml;m me m&euml;shir&euml; jeni t&euml; shp&euml;tuar. Vetvetiu nuk mund t&euml; b&euml;ni asgj&euml; ve&ccedil;se ta pranoni me besim at&euml; q&euml; Per&euml;ndia b&euml;ri p&euml;r ju. Shp&euml;timin tuaj nuk e meritoni, por ai &euml;sht&euml; dhurat&euml; e Per&euml;ndis&euml;. Askush nuk mund t&euml; mburret para Per&euml;ndis&euml; p&euml;r at&euml; q&euml; ka arritur...&quot; (Efesian&euml;ve 2:8-9).</p>
+		<h3>Kur pranojm&euml; Jezuin, fillojm&euml; nj&euml; jet&euml; t&euml; re. </h3>
+		<p>(Lexo Gjonin 3:1-8)</p>
+    " />
+    <input id="i8" type="text" value="
+        <h3>Jezu Krishtin e pranojm&euml; me ftes&euml; personale</h3>
+		<p> (Jezui thot&euml;) &quot;Un&euml; q&euml;ndroj para der&euml;s dhe trokas: kush e d&euml;gjon z&euml;rin tim dhe e hap der&euml;n, do t&euml; hyj tek ai&quot;, (Apokalipsi 3:20).</p>
+		<p>T&euml; pranojm&euml; Jezuin do t&euml; thot&euml; q&euml; nga rruga e m&euml;katit t&euml; kthehemi (pendohemi) tek Per&euml;ndia, ta ftojm&euml; at&euml; n&euml; jet&euml;n ton&euml; q&euml; t&euml; na i fal&euml; m&euml;katet dhe q&euml; t&euml; na b&euml;j&euml; ashtu si&ccedil; d&euml;shiron Ai t&euml; jemi. Nuk mjafton q&euml; vet&euml;m ta pranojm&euml; intelektualisht q&euml; Jezui &euml;sht&euml; Biri i Per&euml;ndis&euml; dhe se Ai vdiq n&euml; kryq p&euml;r ne; nuk mjafton as p&euml;rjetimi emocional. Por duhet ta pranojm&euml; At&euml; p&euml;rmes besimit, si vep&euml;r t&euml; vullnetit personal. </p>
+    " />
+    <input id="i9" type="text" value="
+        <h3>K&euml;to dy rrath&euml; paraqesin dy jet&euml; t&euml; ndryshme:</h3>
+		<p class=&quot;imazhet&quot; ><img src=&quot;Images/rrathet.gif&quot;></p>
+		<p>Cili rreth e p&euml;rfaq&euml;son jet&euml;n t&euml;nde?<strong>
+            Majtas<input type=&quot;radio&quot; name=&quot;perfaqeson&quot; onclick=&quot;pyetja1(1)&quot; value=&quot;majtas&quot; />
+            N&euml; mes<input type=&quot;radio&quot; name=&quot;perfaqeson&quot; onclick=&quot;pyetja1(1)&quot; value=&quot;neMes&quot; />
+            Djathtas<input type=&quot;radio&quot; name=&quot;perfaqeson&quot; onclick=&quot;pyetja1(2)&quot; value=&quot;djathtas&quot; />
+        </strong></p>
+		<div id=&quot;label3&quot;></div>
+		<p id=&quot;pyetja2&quot;>Cili rreth do t&euml; kishe d&euml;shir&euml; t&euml; p&euml;rfaq&euml;sonte jet&euml;n t&euml;nde?<strong>
+            Majtas<input type=&quot;radio&quot; name=&quot;perfaqesonte&quot; onclick=&quot;pyetja2(1)&quot; value=&quot;majtas&quot; />
+            N&euml; mes<input type=&quot;radio&quot; name=&quot;perfaqesonte&quot; onclick=&quot;pyetja2(2)&quot; value=&quot;neMes&quot; />
+            Djathtas<input type=&quot;radio&quot; name=&quot;perfaqesonte&quot; onclick=&quot;pyetja2(2)&quot; value=&quot;djathtas&quot; />
+        </strong></p>
+        <div id=&quot;label&quot;></div>
+    " />
+    <input id="i10" type="text" value="
+        <h3>Q&euml; tani mund ta pranosh Jezuin me besim p&euml;rmes lutjes</h3>
+		<p>(Lutja &euml;sht&euml; bised&euml; me Per&euml;ndin&euml;)</p>
+		<p>Per&euml;ndia ta njeh zemr&euml;n dhe m&euml; shum&euml; se fjal&euml;t d&euml;gjon at&euml; q&euml; t&euml; thot&euml; zemra. Besimin t&euml;nd mund ta shpreh&euml;sh me nj&euml; lutje si kjo:</p>
+		<p><strong>&quot;Zoti Jezu, kam nevoj&euml; p&euml;r Ty. Faleminderit q&euml; ke dh&euml;n&euml; jet&euml;n p&euml;r mua n&euml; kryq. Un&euml; e hap zemr&euml;n time dhe t&euml; pranoj si Shp&euml;timtarin dhe Zotin tim. Faleminderit q&euml; m'i fale m&euml;katet dhe q&euml; m&euml; dhe jet&euml;n e p&euml;rjetshme. Ulu n&euml; fronin e jet&euml;s sime dhe udh&euml;hiqe at&euml;. M&euml; ndihmo q&euml; t&euml; b&euml;hem ashtu si&ccedil; d&euml;shiron Ti t&euml; jem.&quot;</strong></p>
+		<p>A shpreh kjo lutje d&euml;shir&euml;n e zemr&euml;s t&euml;nde?<strong>
+            PO<input type=&quot;radio&quot; name=&quot;lutja&quot; onclick=&quot;pyetja3(1)&quot; value=&quot;Po&quot; />
+            JO<input type=&quot;radio&quot; name=&quot;lutja&quot; onclick=&quot;pyetja3(2)&quot; value=&quot;Jo&quot; />
+        </strong></p>
+        <div id=&quot;label1&quot;></div>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i11" type="text" value="
+        <h3>Si mund ta dish q&euml; Jezusi &euml;sht&euml; n&euml; jet&euml;n t&euml;nde tani</h3>
+        <p>A e pranove Jezusin n&euml; jet&euml;n t&euml;nde? Sipas premtimit t&euml; dh&euml;n&euml; n&euml; librin e Zbules&euml;s 3:20, ku &euml;sht&euml; Ai tani n&euml; lidhje me ty? Jezusi ka th&euml;n&euml; se do t&euml; hyj&euml; n&euml; jet&euml;n t&euml;nde. A do t&euml; t&euml; kishte g&euml;njyer Ai? Si mund ta dish me siguri se Per&euml;ndia i &euml;sht&euml; p&euml;rgjigjur lutjes t&euml;nde? (P&euml;rmes besimit n&euml; Per&euml;ndin&euml; dhe Fjal&euml;n e Tij.)</p>
+        <h3>Bibla u premton jet&euml;n e p&euml;rjetshme t&euml; gjith&euml; atyre q&euml; pranojn&euml; Jezusin</h3>
+        <p>&quot;Kjo d&euml;shmi thot&euml;: Per&euml;ndia na dha jet&euml;n e p&euml;rjetshme dhe k&euml;t&euml; jet&euml; e marrim me an&euml; t&euml; Birit t&euml; Tij. Kush e  ka Birin e Per&euml;ndis&euml;, ka edhe jet&euml;n. Po ju shkruaj q&euml; ta dini se jet&euml;n e p&euml;rjetshme e keni sepse besoni n&euml;  Birin e Per&euml;ndis&euml;&quot; (I Gjoni 5:11-13)</p>
+        <p> Fal&euml;nderoje shpesh Per&euml;ndin&euml; q&euml; Jezusi &euml;sht&euml; n&euml; jet&euml;n t&euml;nde dhe q&euml; Ai kurr&euml; nuk do t&euml; largohet prej teje (Hebrenjve 13:5). Sipas premtimit t&euml; Tij, mund ta dish se Jezusi jeton n&euml; ty. Ai ta dha jet&euml;n e p&euml;rjetshme n&euml; &ccedil;astin kur e ftove At&euml; n&euml; jet&euml;n t&euml;nde. Ai kurr&euml; nuk do t&euml; mashtroj&euml;.</p>
+        <p>Edhe di&ccedil;ka tjet&euml;r q&euml; &euml;sht&euml; me r&euml;nd&euml;si p&euml;r tu mbajtur mend...</p>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i12" type="text" value="
+        <h3>Mos u mb&euml;shtet tek ndjenjat</h3>
+        <p>Premtimi i Fjal&euml;s s&euml; Per&euml;ndis&euml;, Bibl&euml;s, &euml;sht&euml; autoriteti yn&euml;, dhe jo ndjenjat tona. Besimtari n&euml; Jezu Krisht jeton p&euml;rmes besimit n&euml; karakterin e vet&euml; Per&euml;ndis&euml; dhe n&euml; v&euml;rtet&euml;sin&euml; e Fjal&euml;s s&euml; Tij. Ky diagram n&euml; form&euml;n e trenit ilustron lidhjen nd&euml;rmjet faktit(Per&euml;ndia dhe Fjala e Tij), besimit(besimi n&euml; Per&euml;ndin&euml; dhe n&euml; Fjal&euml;n e tij) dhe ndjenjave(q&euml; jan&euml; rezultati i besimit dhe bindjes ndaj Tij).</p>
+        <p class=&quot;imazhet&quot; ><img src=&quot;Images/treni.gif&quot;></p>
+        <p>Treni t&euml;rhiqet prej lokomotiv&euml;s dhe jo prej vagonit t&euml; fundit. Vagoni i mesit mban l&euml;nd&euml;n djeg&euml;se q&euml; duhet hedhur n&euml; lokomotiv&euml;, p&euml;rndryshe treni nuk do t&euml; ec&euml;. N&euml; t&euml; nj&euml;jt&euml;n m&euml;nyr&euml;, ne si besimtar&euml; nuk mb&euml;shtetemi n&euml; ndjenjat dhe emocionet tona, por n&euml; vet&euml; Per&euml;ndin&euml; dhe premtimet p&euml;rmes Fjal&euml;s s&euml; Tij.(Gjoni 14:21)</p>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i13" type="text" value="
+        <h3>Tani q&euml; ke pranuar Jezusin</h3>
+        <p> Kur pranove Jezusin me besim si shprehje e vullnetit personal, ndodh&euml;n shum&euml; gj&euml;ra. Disa nga ato jan&euml;:</p>
+        <ul>
+            <li>Jezusi hyri n&euml; jet&euml;n t&euml;nde.(Zbulesa 3:20; Kolosianeve 1:27)</li>
+            <li>M&euml;katet tu fal&euml;n. (Kolosianeve 1:14)</li>
+            <li>U b&euml;re f&euml;mij&euml; i Per&euml;ndis&euml;.(Gjoni 1:12)</li>
+            <li>Tu dha jeta e p&euml;rjetshme.(Gjoni 5:24)</li>
+            <li>Fillove t&euml; zbulosh planin e madh q&euml; ka Per&euml;ndia p&euml;r jet&euml;n t&euml;nde.(Gjoni 10:10; 2 Korintasve 5:17; I Thesalonikasve 5:18)</li>
+        </ul>
+        <p>A ka gj&euml; m&euml; t&euml; mrekullueshme se sa pranimi i Jezusit si Zot? A d&euml;shiron ta fal&euml;nderosh Per&euml;ndin&euml; p&euml;rmes  lutjes p&euml;r at&euml; q&euml; ka b&euml;r&euml; p&euml;r ty? Duke e fal&euml;nderuar ti shpreh besimin t&euml;nd.</p>
+        <p>T&euml; shijosh k&euml;naq&euml;sin&euml; e jet&euml;s s&euml; re bashk&euml; me...</p>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i14" type="text" value="
+        <h3>Sugjerime p&euml;r rritjen shpirt&euml;rore</h3>
+        <p>Rritja shpirt&euml;rore &euml;sht&euml; rezultati i besimit te Jezusi. &quot;I drejti do t&euml; rroj&euml; me an&euml; t&euml; besimit&quot;(Galatasve 3:11) Nj&euml; jet&euml; e mbushur me besim tek Jezusi do t&euml; t&euml; b&euml;j&euml; ti besosh Per&euml;ndis&euml; gjithnj&euml; e m&euml; shum&euml;, t&euml; mb&euml;shtetesh  tek Ai p&euml;r &ccedil;do detaj t&euml; jet&euml;s t&euml;nde dhe t&euml; praktikosh hapat e rritjes si m&euml; posht&euml;:</p>
+        <p><strong>R</strong>eferoju Fjal&euml;s s&euml; Per&euml;ndis&euml;, lexoje at&euml; &ccedil;do dit&euml;(Veprat 17:11)-fillo me Ungjillin sipas Gjonit</p>
+        <p><strong>R</strong>ehatuesi-Lejo Shpirtin e Shenjt&euml; t&euml; t&euml; udh&euml;heq&euml; dhe t&euml; t&euml; jap&euml; fuqi p&euml;r jet&euml;n dhe d&euml;shmin&euml; t&euml;nde t&euml; p&euml;rditshme(Galatasve 5:16,17; Veprat 1:8)</p>
+        <p><strong>I</strong> beso Per&euml;ndis&euml; p&euml;r &ccedil;do detaj t&euml; jet&euml;s t&euml;nde(I Pjetrit 5:7).</p>
+        <p><strong>T</strong>regoju t&euml; tjer&euml;ve p&euml;r Jezusin p&euml;rmes jet&euml;s dhe fjal&euml;ve t&euml; tua(Mateu 4:19; Gjoni 15:8).</p>
+        <p><strong>J</strong>epju Per&euml;ndis&euml; n&euml; m&euml;nyr&euml; t&euml; vazhdueshme duke iu bindur Fjal&euml;s s&euml; Tij(Gjoni 14:21).</p>
+        <p><strong>A</strong>frohu &ccedil;do dit&euml; tek Per&euml;ndia duke iu lutur Atij(Gjoni 15:7).</p>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i15" type="text" value="
+        <h3>Miq&euml;sia me besimtar&euml; t&euml; tjer&euml;:</h3>
+        <p> Fjala e Per&euml;ndis&euml; na k&euml;shillon q&euml; t&euml; mos harrojm&euml; t&euml; mblidhemi s&euml; bashku(Hebrenjve 10:25). Kur jan&euml; shum&euml; trungje bashk&euml; ato digjen fare mir&euml;, por po ta ve&ccedil;ojm&euml; nj&euml; nga trungjet ai shpejt do t&euml; shuhet. E nj&euml;jta  gj&euml; ndodh edhe me marr&euml;dh&euml;nien t&euml;nde me besimtar&euml; t&euml; tjer&euml;. N&euml;se nuk je pjes&euml;tar i ndonj&euml; bashk&euml;sie, mos prit t&euml; t&euml; ftojn&euml;. Merre vet&euml; iniciativ&euml;n; tako pastorin e nj&euml; bashk&euml;sie t&euml; krishter&euml; ku nderohet Krishti dhe predikohet Fjala e Tij. Fillo t&euml; shkosh q&euml; k&euml;t&euml; jav&euml; dhe b&euml;hu pjes&euml;tar i rregullt i saj.</p>
+        <h3> Materiale t&euml; ve&ccedil;anta p&euml;r rritjen n&euml; besim</h3>
+        <p>N&euml;se arrite ta njoh&euml;sh Krishtin p&euml;rmes k&euml;tij prezantimi t&euml; ungjillit, na shkruaj p&euml;r materiale t&euml; tjera q&euml; do t&euml; t&euml; ndihmojn&euml; t&euml; rritesh n&euml; besim.</p>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>
+    " />
+    <input id="i16" type="text" value="
+        <p>E vler&euml;sojm&euml; sinqeritetin t&euml;nd. Ndoshta ndonj&euml; dit&euml; do t&euml; duash ta ftosh Krishtin n&euml; jet&euml;n t&euml;nde. Duam t&euml; t&euml; tregojm&euml; se si ta pranosh Krishtin kur t&euml; vij&euml; ajo dit&euml;.</p>
+    " />
+    <input id="i17" type="text" value="
+        <p>At&euml;here q&euml; tani mund t&euml; lutesh sipas tekstit t&euml; lutjes s&euml; sugjeruar. Ajo q&euml; ka m&euml; shum&euml; r&euml;nd&euml;si &euml;sht&euml; sa i sinqert&euml; je. N&euml;se ja thua Krishtit sinqerisht, Ai do t&euml; vij&euml; n&euml; jet&euml;n t&euml;nde, si&ccedil; ka premtuar.</p>
+    " />
+    <input id="i18" type="text" value="
+        <p>Lejo t&euml; t&euml; tregojm&euml; se &ccedil;&#39;do t&euml; ndodh&euml; me ty pasi t&euml; ftosh Krishtin n&euml; jet&euml;n t&euml;nde, si nj&euml; akt besimi:</p>
+    " />
+    <input id="i19" type="text" value="
+        <br />
+        <ul>
+            <li>Krishti do t&euml; vij&euml; n&euml; jet&euml;n t&euml;nde.</li>
+            <li>M&euml;katet do t&euml; t&euml; falen.</li>
+            <li>Do t&euml; b&euml;hesh f&euml;mij&euml; i Per&euml;ndis&euml; .</li>
+            <li>Do t&euml; t&euml; jepet jeta e p&euml;rjetshme.</li>
+            <li>Do t&euml; fillosh t&euml; zbulosh planin e madh q&euml; ka Per&euml;ndia p&euml;r jet&euml;n t&euml;nde.</li>
+        </ul>
+        <p>Tani q&euml; d&euml;gjove m&euml; shum&euml; se &ccedil;&#39;ndodh kur e fton Krishtin si Zotin dhe Shp&euml;timtarin t&euml;nd, a d&euml;shiron q&euml; ta ftosh At&euml; n&euml; jet&euml;n t&euml;nde?</p>
+        <p><strong>
+            PO<input type=&quot;radio&quot; name=&quot;pyetja4&quot; onclick=&quot;pyetja4(1)&quot; value=&quot;Po&quot; />
+            JO<input type=&quot;radio&quot; name=&quot;pyetja4&quot; onclick=&quot;pyetja4(2)&quot; value=&quot;Jo&quot; />
+        </strong></p>
+        <div id=&quot;label2&quot;></div>
+        <p class=&quot;kontaktoni&quot; onclick=&quot;kontakt()&quot;><strong>D&euml;shironi t&euml; kontaktoni me ne?</strong></p>  
+    " />
+    <input id="i20" type="text" value="
+        <p>Faleminderit. N&euml;se ndonj&euml; dit&euml; do t&euml; ndryshosh mendjen, ti e di se &ccedil;&#39;duhet t&euml; b&euml;sh.</p>
+    " />
+	<input id="i21" type="text" value=" 
+		<p>Si kalon nj&euml;  njeri nga rrethi n&euml;  t&euml;  majt&euml;  n&euml;  rrethin n&euml;  t&euml;  djatht&euml;? N&euml;se p&euml;rgjigjia jote &euml;sht&euml; e ngjashme me di&ccedil;ka si – po un&euml; kam qen&euml; gjithmon&euml;, njeri i mir&euml;, nuk kam b&euml;r&euml; t&euml; k&euml;qija, apo un&euml; vij nga nj&euml; familje me tradita katolike apo ortodokse, at&euml;here duhet t&euml; kujtosh se nga LIGJI 4 JEzusi vjen brenda jet&euml;s son&euml; vet&euml;m kur e ftojm&euml; at&euml; personalisht, me vullnet t&euml; lir&euml;. Nga ana tjet&euml;r LIGJI 2 na e b&euml;n t&euml; qart&euml; se nuk ka asnj&euml; njeri pa m&euml;kat, pavar&euml;sisht se ku ke lindur. Sipas LIGJIT 3, m&euml;katet shlyhen vet&euml;m duke lejuar Jezu Krishtin t&euml; vdes&euml; n&euml; vendin t&euml;nd, duke rivendosur k&euml;shtu marr&euml;dh&euml;nien e prishur me Per&euml;ndin&euml; p&euml;r shkak t&euml; m&euml;kateve.  M&euml;  lejo t&euml;  vazhdoj ta lexoj k&euml; t&euml;  broshur&euml;, q&euml;  ta b&euml; j t&euml;  qart&euml;  se &ccedil;do t&euml;  thot&euml;  t&euml;  kalosh nga rrethi n&euml;  t&euml;  majt&euml;  n&euml;  rrethin n&euml;  t&euml;  djatht&euml;. </p>
+	"/>
+    <div id="neFund">
+                <input type="button" id="P1" onclick="ndryshoFaqe(1)" value="1">
+                <input type="button" id="P2" onclick="ndryshoFaqe(2)" value="2">
+                <input type="button" id="P3" onclick="ndryshoFaqe(3)" value="3">
+                <input type="button" id="P4" onclick="ndryshoFaqe(4)" value="4">
+                <input type="button" id="P5" onclick="ndryshoFaqe(5)" value="5">
+                <input type="button" id="P6" onclick="ndryshoFaqe(6)" value="6">
+                <input type="button" id="P7" onclick="ndryshoFaqe(7)" value="7">
+                <input type="button" id="P8" onclick="ndryshoFaqe(8)" value="8">
+                <input type="button" id="P9" onclick="ndryshoFaqe(9)" value="9">
+                <input type="button" id="P10" onclick="ndryshoFaqe(10)" value="10">
+                <input type="button" id="P11" onclick="ndryshoFaqe(11)" value="11">
+                <input type="button" id="P12" onclick="ndryshoFaqe(12)" value="12">
+                <input type="button" id="P13" onclick="ndryshoFaqe(13)" value="13">
+                <input type="button" id="P14" onclick="ndryshoFaqe(14)" value="14">
+                <input type="button" id="P15" onclick="ndryshoFaqe(15)" value="15">
+    </div>
+    <address id="adresa"> <strong>Copyright AB&copy; 2015</strong></address>
+</body>
+</html>
