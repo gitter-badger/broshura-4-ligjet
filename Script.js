@@ -16,17 +16,12 @@
 */
 
 
-var kontaktVar = true;
 var pergjigje3 = 1;
 var tmp = false;
 function kontakt() {
-    if (kontaktVar == false) {
-        document.getElementById("forma").style.visibility = 'hidden';
-        kontaktVar = true;
-    }
-    else {
-        document.getElementById("forma").style.visibility = 'visible';
-        kontaktVar = false;
+    var forma = document.getElementById("forma")
+    if (forma.style.visibility == 'hidden') {
+        forma.style.setProperty('visibility', 'visible')
     }
 }
 var aktual = 1;

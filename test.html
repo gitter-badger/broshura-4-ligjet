@@ -36,19 +36,20 @@ describe('kontakt', function () {
         expect(document.getElementById("forma")).toBeDefined()
         
         var style = document.getElementById("forma").style
-        expect(style.visibility).toEqual('visible')
+        expect(style.getPropertyValue('visibility')).toEqual('visible')
     })
 
     it('should reset the form to invisible', function() {
 
         // act
         kontakt();
+        kontakt();
 
         // assert
         expect(document.getElementById("forma")).toBeDefined()
         
         var style = document.getElementById("forma").style
-        expect(style.visibility).toEqual('hidden')
+        expect(style.getPropertyValue('visibility')).toEqual('hidden')
     })
 })
         </script>

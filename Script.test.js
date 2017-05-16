@@ -37,6 +37,7 @@ describe('kontakt', function () {
 
     // act
     kontakt();
+    kontakt();
 
     // assert
     expect(document.getElementById("forma")).to.exist
