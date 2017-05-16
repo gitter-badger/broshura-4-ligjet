@@ -17,7 +17,7 @@ module.exports = function(config) {
       'Script.js',
 
       // Specs
-      { pattern: '**/*.test.js', watching: true },
+      { pattern: '*.test.js', watching: true },
     ],
 
     // preprocess matching files before serving them to the browser

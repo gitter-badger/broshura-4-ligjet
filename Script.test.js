@@ -3,7 +3,7 @@ var assert = chai.assert;
 var expect = chai.expect;
 var should = chai.should();
 
-describe('kontakt', () => {
+describe('kontakt', function () {
 
   beforeEach(function (done) {
     console.log('loading')
@@ -21,7 +21,7 @@ describe('kontakt', () => {
     document.body.innerHTML = '<h1>between tests</h1>'
   })
 
-  it('should set the form to visible', () => {
+  it('should set the form to visible', function() {
 
     // act
     kontakt();
@@ -33,7 +33,7 @@ describe('kontakt', () => {
     expect(style.visibility).to.equal('visible')
   })
 
-  it('should reset the form to invisible', () => {
+  it('should reset the form to invisible', function() {
 
     // act
     kontakt();

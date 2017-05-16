@@ -1,3 +1,15 @@
+image: nolimitid/node-phantom
+
+cache:
+  paths:
+    - node_modules/
+
+test:
+  before_script:
+    - yarn install
+  script:
+    - yarn run test
+
 pages:
   script:
   - mkdir .public
