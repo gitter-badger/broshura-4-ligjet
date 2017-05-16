@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <!-- Load the Jasmine test framework and associated test helpers -->
+        <link rel="shortcut icon" type="image/png" href="vendor/jasmine-standalone-2.6.1/lib/jasmine-2.6.1/jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="vendor/jasmine-standalone-2.6.1/lib/jasmine-2.6.1/jasmine.css">
+
+        <script type="text/javascript" src="vendor/jasmine-standalone-2.6.1/lib/jasmine-2.6.1/jasmine.js"></script>
+        <script type="text/javascript" src="vendor/jasmine-standalone-2.6.1/lib/jasmine-2.6.1/jasmine-html.js"></script>
+        <script type="text/javascript" src="vendor/jasmine-standalone-2.6.1/lib/jasmine-2.6.1/boot.js"></script>
+    </head>
+    <body>
+
+        <div id="page" hidden>
+        </div>
+
+        <script type="text/javascript" src="Script.js"></script>
+        <script type="text/javascript">
+
+describe('kontakt', function () {
+    beforeEach(function(done) {
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", function() {
+            document.getElementById('page').innerHTML = this.responseText
+            done();
+        });
+        oReq.open("GET", "index.html");
+        oReq.send();
+    })
+
+    it('should set the form to visible', function() {
+
+        // act
+        kontakt();
+
+        // assert
+        expect(document.getElementById("forma")).toBeDefined()
+        
+        var style = document.getElementById("forma").style
+        expect(style.visibility).toEqual('visible')
+    })
+
+    it('should reset the form to invisible', function() {
+
+        // act
+        kontakt();
+
+        // assert
+        expect(document.getElementById("forma")).toBeDefined()
+        
+        var style = document.getElementById("forma").style
+        expect(style.visibility).toEqual('hidden')
+    })
+})
+        </script>
+    </body>
+</html>
